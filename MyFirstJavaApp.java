@@ -1,9 +1,8 @@
-package Java;
-
-
 public class MyFirstJavaApp {
     
     public static void main(String[] args) {
+
+        //Gerador de ID - Gera o ID das imagens que os satélites realizaram para o ordenamento de dados
         int[] vetor = new int[10];
         
         for (int i = 0; i < vetor.length; i++) {
