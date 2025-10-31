@@ -11,7 +11,7 @@ public class ImageGen {
 
     // Método que imprime um array
     void imprimirVetor(int[] vetor) {
-        for (int i=0; i<=vetor.length; i++) {
+        for (int i : vetor) {
             System.out.print(i + " ");
         }
         System.out.println();
@@ -30,21 +30,21 @@ public class ImageGen {
             }
         }
     }
-
-    // Método principal para testar
-    public static void main(String[] args) {
-        ImageGen ig = new ImageGen();
-
-        // Gerar números aleatórios
-        int[] imagens = ig.gerarImagens(50);
-
-        System.out.println("Vetor original:");
-        ig.imprimirVetor(imagens);
-
-        // Ordenar
-        ig.bubbleSort(imagens);
-
-        System.out.println("Vetor ordenado:");
-        ig.imprimirVetor(imagens);
+    
+    void InsertionSort(int[] vetor){
+        int aux, j;
+        for (int i = 1; i < vetor.length; i++) {
+            aux = vetor[i];
+            j = i-1;
+            while (j >= 0 && vetor[j] > aux) {
+                vetor[j+1] = vetor[j];
+                j--;
+            }
+            vetor[j+1] = aux;
+        }
+        System.out.println("\n\nOrdenado");
+        for(int i=0; i < vetor.length; i++){
+            
+        }
     }
 }
