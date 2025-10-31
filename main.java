@@ -5,18 +5,25 @@ public class Main {
         // Gerar números aleatórios
         int[] imagens = ig.gerarImagens(50);
 
+        
+
+        
         System.out.println("Vetor original:");
         ig.imprimirVetor(imagens);
 
-        System.out.println("Usando InsetionSort");
-        ig.InsertionSort(imagens);
+        System.out.println("Vetor ordenado pelo algoritmo QuickSort:");
+        
 
-        ig.bubbleSort(imagens);
-
-        System.out.println("Vetor ordenado:");
+        System.out.println("Quicksort");
+        ig.QuickSort(imagens, 0, imagens.length - 1);
+        
         ig.imprimirVetor(imagens);
 
 
-        ig.QuickSort(imagens, 0, 0);;
+        ig.bubbleSort(imagens);
+        System.out.println("Bubblesort");
+        ig.imprimirVetor(imagens);
+
+
     }
 }

@@ -53,7 +53,7 @@ public class ImageGen {
     
 
     void QuickSort(int[] vetor, int left, int right){
-        if (left > right){
+        if (left < right){
             int p = particao(vetor, left, right);
             QuickSort(vetor, left, p);
             QuickSort(vetor, p+1, right);
@@ -77,7 +77,7 @@ public class ImageGen {
             if (i>=j) {
                 return j;
             }
-            int aux = vetor[j];
+            int aux = vetor[i];
             vetor[i] = vetor[j];
             vetor[j] = aux;
         }
