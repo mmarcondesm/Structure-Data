@@ -42,10 +42,7 @@ public class ImageGen {
             }
             vetor[j+1] = aux;
         }
-        System.out.println("\n\nOrdenado");
-        for(int i=0; i < vetor.length; i++){
-            
-        }
+        
 
 
     }

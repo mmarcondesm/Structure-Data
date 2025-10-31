@@ -11,18 +11,23 @@ public class Main {
         System.out.println("Vetor original:");
         ig.imprimirVetor(imagens);
 
-        System.out.println("Vetor ordenado pelo algoritmo QuickSort:");
         
 
-        System.out.println("Quicksort");
-        ig.QuickSort(imagens, 0, imagens.length - 1);
         
+        ig.QuickSort(imagens, 0, imagens.length - 1);
+        System.out.println("Quicksort");
         ig.imprimirVetor(imagens);
 
 
         ig.bubbleSort(imagens);
         System.out.println("Bubblesort");
         ig.imprimirVetor(imagens);
+
+        ig.InsertionSort(imagens);
+        System.out.println("InsertionSort");
+        ig.imprimirVetor(imagens);
+
+        
 
 
     }
