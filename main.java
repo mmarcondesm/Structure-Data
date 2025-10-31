@@ -15,5 +15,8 @@ public class Main {
 
         System.out.println("Vetor ordenado:");
         ig.imprimirVetor(imagens);
+
+
+        ig.QuickSort(imagens, 0, 0);;
     }
 }

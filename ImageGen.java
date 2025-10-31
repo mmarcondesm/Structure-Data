@@ -46,5 +46,41 @@ public class ImageGen {
         for(int i=0; i < vetor.length; i++){
             
         }
+
+
     }
+
+    
+
+    void QuickSort(int[] vetor, int left, int right){
+        if (left > right){
+            int p = particao(vetor, left, right);
+            QuickSort(vetor, left, p);
+            QuickSort(vetor, p+1, right);
+
+        }
+    }
+
+
+    int particao(int[] vetor, int left, int right){
+        int mid = (int) (left+right)/2;
+        int pivot = vetor[mid];
+        int i = left-1;
+        int j = right+1;
+        while (true) {
+            do{
+                i++;
+            }while(vetor[i] < pivot);
+            do{
+                j--;
+            }while(vetor[j]>pivot);
+            if (i>=j) {
+                return j;
+            }
+            int aux = vetor[j];
+            vetor[i] = vetor[j];
+            vetor[j] = aux;
+        }
+    }
+
 }
