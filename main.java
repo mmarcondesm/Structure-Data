@@ -2,7 +2,6 @@ public class Main {
      public static void main(String[] args) {
         ImageGen ig = new ImageGen();
 
-        // Gerar números aleatórios
         int[] imagens = ig.gerarImagens(50);
 
         

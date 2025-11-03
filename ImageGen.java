@@ -1,15 +1,13 @@
 public class ImageGen {
 
-    // Método que gera um array de números aleatórios
     int[] gerarImagens(int tamanho) {
-        int[] vetor = new int[20];
+        int[] vetor = new int[10000];
         for (int i = 0; i < vetor.length; i++) {
             vetor[i] = (int) (Math.random() * vetor.length);
         }
-        return vetor; // Retorna o array gerado
+        return vetor; 
     }
 
-    // Método que imprime um array
     void imprimirVetor(int[] vetor) {
         for (int i : vetor) {
             System.out.print(i + " ");
@@ -17,7 +15,6 @@ public class ImageGen {
         System.out.println();
     }
 
-    // Método que ordena um array usando Bubble Sort
     void bubbleSort(int[] vetor) {
         int aux;
         for (int i = 0; i < vetor.length; i++) {
@@ -57,7 +54,7 @@ public class ImageGen {
 
         }
     }
-
+ 
 
     int particao(int[] vetor, int left, int right){
         int mid = (int) (left+right)/2;
